@@ -1,0 +1,209 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,top=0.3in,bottom=0.3in,left=0.4in,right=0.4in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{fontawesome}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{needspace}
+
+\hypersetup{hidelinks}
+
+\DeclareFontFamily{U}{fontawesomeOne}{}
+\DeclareFontShape{U}{fontawesomeOne}{m}{n}
+{<-> FontAwesome--fontawesomeone}{}
+\DeclareRobustCommand\FAone{\fontencoding{U}\fontfamily{fontawesomeOne}\selectfont}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+#1 & #2 \\
+\end{tabular*}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Minghao Guo}}
+    \vspace{0.1cm}
+    \\
+    \raisebox{-0.2\height}{\Large \faPhoneSquare}\ (919) 306-3350
+    \hfill \raisebox{-0.2\height}{\Large \faEnvelopeSquare}\ mhkwok2016@gmail.com
+    \hfill \raisebox{-0.2\height}{\Large \faLinkedinSquare}\ \href{https://www.linkedin.com/in/minghao-guo-181b4b168/}{LinkedIn}
+    \hfill \raisebox{-0.2\height}{\Large \faGraduationCap}\ \href{https://scholar.google.com/citations?user=T4w7A8IAAAAJ\&hl=zh-CN}{Google Scholar}
+    \hfill \raisebox{-0.2\height}{\Large \faGlobe}\ \href{https://minghokwok.github.io/}{Homepage}
+\end{center}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Profile}
+
+\begin{itemize}[leftmargin=1em]
+    \item Computer Science Ph.D. specializing in agentic retrieval, persistent memory, personalization, and evaluation. Builds systems that retrieve and reason over enterprise knowledge and long-term multimodal interactions, and evaluation frameworks that measure how personalized agents behave.
+\end{itemize}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Education}
+
+\begin{itemize}[leftmargin=1em]
+    \parskip=0.1em
+
+    \item
+    \headerrow
+        {\textbf{Rutgers University}}
+        {\textbf{New Brunswick, NJ}}
+    \headerrow
+        {\emph{Ph.D. in Computer Science; Advisor: Dimitris N. Metaxas}}
+        {\emph{Sep. 2023 -- Dec. 2026}}
+
+    \item
+    \headerrow
+        {\textbf{North Carolina State University}}
+        {\textbf{Raleigh, NC}}
+    \headerrow
+        {\emph{M.S. in Computer Science}}
+        {\emph{Aug. 2021 -- May 2023}}
+
+    \item
+    \headerrow
+        {\textbf{Sichuan University}}
+        {\textbf{Chengdu, China}}
+    \headerrow
+        {\emph{B.E. in Computer Science and Technology}}
+        {\emph{Sep. 2016 -- Jun. 2020}}
+\end{itemize}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Experience}
+
+\renewcommand\labelitemi{}
+\renewcommand\labelitemii{$\bullet$}
+\begin{itemize}[leftmargin=1em]
+    \parskip=0.1em
+
+    \item
+    \headerrow
+        {\textbf{Zoom}}
+        {\textbf{Bellevue, WA}}
+    \headerrow
+        {\emph{Agentic Retrieval R\&D Intern}}
+        {\emph{May 2026 -- Aug. 2026}}
+
+    \Needspace{8\baselineskip}
+    \item \emph{\textbf{Evaluation Framework for Context Memory of Zoom Meeting}}
+    \begin{itemize}[leftmargin=1.3em,itemsep=0.05em,topsep=0.15em]
+        \item Built an end-to-end evaluation framework for Zoom's meeting knowledge graph, generating synthetic meeting transcripts from event timelines with aligned ground-truth claims and QA pairs to measure retrieval quality and answer grounding.
+        \item Designed a gated evaluation-and-improvement loop integrating extraction, clustering, retrieval, and claim-level scoring; improved claim recall from 0.625 to 0.750 on a representative evaluation set.
+        \item Created a 260-question single-meeting benchmark covering action items, ownership, relationships, blockers, and temporal changes, enabling fine-grained diagnosis of retrieval and knowledge-capture failures.
+    \end{itemize}
+
+    \item
+    \headerrow
+        {\textbf{Rutgers University}}
+        {\textbf{New Brunswick, NJ}}
+    \headerrow
+        {\emph{Ph.D. Researcher}}
+        {\emph{Sep. 2023 -- Present}}
+
+    \Needspace{6\baselineskip}
+    \item \emph{\textbf{MemEye: A Visual-Centric Evaluation Framework for Multimodal Agent Memory}}
+    \begin{itemize}[leftmargin=1.3em,itemsep=0.05em,topsep=0.15em]
+        \item Developed a visual-centric benchmark for evaluating how multimodal agent memory systems retain, retrieve, and reason over information from long-term visual interactions.
+        \item Proposed a two-dimensional evaluation taxonomy covering memory granularity, from scene-level context to pixel-level details, and evidence usage, from single observations to temporal state evolution.
+        \item Evaluated 13 memory methods across four vision-language model backbones, revealing substantial weaknesses in fine-grained visual recall, temporal change tracking, and multi-observation evidence synthesis.
+    \end{itemize}
+
+    \Needspace{6\baselineskip}
+    \item \emph{\textbf{Seeing, Maintaining, Learning: Evolution of Multimodal Agent Memory}}
+    \begin{itemize}[leftmargin=1.3em,itemsep=0.05em,topsep=0.15em]
+        \item Led 80 authors and coordinated taxonomy design and research synthesis, organizing methods by experience representation and the evolution of memory-management policies, from static retrieval to self evolving.
+        \item Analyzed 252 memory architectures and 76 benchmark records, identifying gaps in evidence preservation, temporal consistency, and bounded lifelong memory.
+    \end{itemize}
+
+    \Needspace{6\baselineskip}
+    \item \emph{\textbf{DeepSieve: Information Sieving via LLM-as-a-Knowledge-Router}}
+    \begin{itemize}[leftmargin=1.3em,itemsep=0.05em,topsep=0.15em]
+        \item Built an agentic RAG framework that decomposes complex questions, routes subquestions to documents, structured data, and APIs, and iteratively filters retrieved evidence.
+        \item Enabled reasoning across heterogeneous sources without merging their indexes; evaluated multi-hop QA on MuSiQue, 2WikiMultiHopQA, and HotpotQA.
+    \end{itemize}
+
+    \Needspace{6\baselineskip}
+    \item \emph{\textbf{Individual Turing Test: Personalized Agent via RAG, LoRA \& Hybrid Memory}}
+    \begin{itemize}[leftmargin=1.3em,itemsep=0.05em,topsep=0.15em]
+        \item Built a personalized agent by fine-tuning Qwen2.5-7B with LoRA on longitudinal personal WeChat chat data, and compared fine-tuning, RAG, and hybrid memory through blind judgments by the user's acquaintances.
+        \item LoRA fine-tuning alone beat a RAG-only baseline in blind pairwise judgments (win rate 0.608, p $<$ 0.001), and combining RAG with LoRA performed best, showing personalization benefits from both memory retrieval and model adaptation.
+        \item Proposed an individual Turing test framework where acquaintances evaluate the authenticity of the AI digital twin against the real user.
+    \end{itemize}
+
+    \Needspace{8\baselineskip}
+    \item
+    \headerrow
+        {\textbf{Tsinghua University}}
+        {\textbf{Beijing, China}}
+    \headerrow
+        {\emph{Ph.D. Research Intern}}
+        {\emph{May 2025 -- Aug. 2025}}
+
+    \item \emph{\textbf{TwinVoice: A Multi-dimensional Benchmark Towards Digital Twins via LLM Persona Simulation}}
+    \begin{itemize}[leftmargin=1.3em,itemsep=0.05em,topsep=0.15em]
+        \item Designing \textbf{TwinVoice}, the first \textbf{real-world} benchmark to evaluate Digital Twin agents (LLM-based systems that emulate a target human’s linguistic style, preferences, and personality).
+        \item Curating large-scale datasets across \textbf{three tracks}: Social Behavior, Personal Dialogue, and Narrative Persona, covering both \textbf{discriminative} and \textbf{generative} tasks.
+        \item Leveraging \textbf{authentic conversational history} to assess style imitation fidelity, memory consistency, and persona alignment, avoiding synthetic or crowd-annotated biases.
+    \end{itemize}
+
+\end{itemize}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Selected Publications}
+
+\begin{enumerate}[leftmargin=1.6em,itemsep=0.15em,parsep=0pt,topsep=0.1em]
+    \item \textbf{MemEye: A Visual-Centric Evaluation Framework for Multimodal Agent Memory.} \\
+    \textbf{Minghao Guo}*, Qingyue Jiao*, et al. \\
+    \textit{Under review at \textbf{ICLR 2027}.}\href{https://arxiv.org/abs/2605.15128}{ [Paper]}
+
+    \item \textbf{Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory.} \\
+    \textbf{Minghao Guo}* (project organizer), Qingyue Jiao*, et al. \\
+    \textit{Under review at \textbf{TMLR}.}\href{https://arxiv.org/pdf/2610.19366}{ [Paper]}\href{https://github.com/Seeing-Maintaining-Learning}{ [Project \& Resources]}
+
+    \item \textbf{DeepSieve: Information Sieving via LLM-as-a-Knowledge-Router.} \\
+    \textbf{Minghao Guo}, Qingcheng Zeng, et al. \\
+    \textit{\textbf{Findings of EACL 2026}.}\href{https://arxiv.org/abs/2507.22050}{ [Paper]}\href{https://github.com/MinghoKwok/DeepSieve}{ [Code]}
+
+    \item \textbf{Individual Turing Test: A Case Study of LLM-based Simulation Using Longitudinal Personal Data.} \\
+    \textbf{Minghao Guo}, Ziyi Ye, et al. \\
+    \textit{\textbf{SIGIR 2026}, short paper.}\href{https://arxiv.org/abs/2603.01289}{ [Paper]}
+
+    \item \textbf{TwinVoice: A Multi-dimensional Benchmark Towards Digital Twins via LLM Persona Simulation.} \\
+    Bangde Du*, \textbf{Minghao Guo}*, et al. \\
+    \textit{\textbf{ACL 2026}.}\href{https://arxiv.org/pdf/2510.25536}{ [Paper]}
+    \item \textbf{OpenPM: Auditable Point-in-Time Evaluation for LLM Portfolio-Management Agents.} \\
+    Xinying Cai*, \textbf{Minghao Guo}*, et al. \\
+    \textit{Forthcoming in \textbf{SIGKDD Explorations}, Dec. 2026.}\href{https://arxiv.org/abs/2608.09988}{ [Paper]}
+
+
+    \item \textbf{ReaGAN: Node-as-Agent-Reasoning Graph Agentic Network.} \\
+    \textbf{Minghao Guo}, Xi Zhu, et al. \\
+    \textit{\textbf{HCRS @ TheWebConf 2026}.}\href{https://arxiv.org/pdf/2508.00429}{ [Paper]}
+\end{enumerate}
+
+\noindent\textit{* Equal contribution.}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Skills}
+
+\begin{itemize}[leftmargin=0.15in]
+    \item \textbf{Programming \& Systems:} Python, SQL, C++, Bash, Git, Docker, Linux
+    \item \textbf{ML \& Retrieval:} PyTorch, Hugging Face, vLLM, RAG, vector search, knowledge graphs, LLM agents, post-training (SFT, LoRA)
+    \item \textbf{Evaluation:} benchmark design, retrieval and claim-level evaluation, multi-hop QA, personalized-agent evaluation
+\end{itemize}
+
+\end{document}
